@@ -1,0 +1,100 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-color: #0D0D0D;
+}
+
+.main-color {
+    color: #f9f6f6;
+}
+
+.main-bg {
+    background-color: #0D0D0D;
+}
+
+#slideBox {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+}
+
+#navBox {
+    display: none;
+    width: 65%;
+
+}
+
+#navBoxCap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+#navSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70px;
+    background-color: #f9f6f6;
+    align-items: center;
+
+}
+#openIcon {
+    cursor: pointer;
+
+    display: block;
+}
+#colseIcon {
+    display: none;
+    cursor: pointer;
+
+}
+i,a{
+    cursor: pointer;
+
+}
+
+
+
+#listItem1,
+#listItem2,
+#listItem3,
+#listItem4,
+#listItem5 {
+    display: none;
+}
+
+
+
+#home .crd {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#crdCap {
+    position: absolute;
+    top: 100%;
+    width: 93%;
+    background-color: #f9f6f6d2;
+    height: 100%;
+    transition: all .5s;
+}
+
+#home .crd:hover #crdCap {
+    top: 0;
+}
+#searchByName::placeholder,#searchByLetter::placeholder{
+    color: #f9f6f6a8 ;
+
+}
+#searchByName,#searchByLetter{
+    display: none;
+    color: #f9f6f6;
+}
